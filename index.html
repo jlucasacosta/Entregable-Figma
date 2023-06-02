@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Entregable Figma</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav__container">
+          <a href="#"><img src="/assets/Brand.svg" alt="Brand" /></a>
+          <ul>
+            <li><a class="nav__menu" href="#pricing">Pricing</a></li>
+            <li>
+              <a class="nav__menu" href="#resourceCenter">Resource Center</a>
+            </li>
+            <li><a class="nav__menu" href="#about">About</a></li>
+            <li><a class="nav__menu" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="nav__container">
+          <a class="nav__menu" href="#login">Log In</a>
+          <a href="#signup" id="btn__menu">Sign Up</a>
+        </div>
+      </nav>
+    </header>
+
+    <section class="content">
+        <article class="info__container">
+
+            <div class="info">
+              <h1>Talk to our product analytics expert</h1>
+              <p>
+                Have questions about pricing, plans, or Growthly? Fill out the
+                form and out product analytics expert will be in touch directly.
+              </p>
+            </div>
+
+            <div class="image__info">
+              <h2>Our office</h2>
+              <img src="./assets/Image article.png" alt="Article image" />
+              <p>
+                Have questions about pricing, plans, or Growthly? Fill out the
+                form and out product analytics expert will be in touch directly.
+              </p>
+            </div>
+
+          <div class="contact">
+            <div class="card">
+              <h2>United Kingdom</h2>
+              <div class="card__info">
+                <img
+                  class="card__icon"
+                  src="./assets/Location icon.svg"
+                  alt="Location icon"
+                />
+                <a class="card__address"
+                  href="https://www.google.com/maps/place/30+Eastbourne+Terrace,+London+W2+6LA,+Reino+Unido/data=!4m2!3m1!1s0x48761aad19b77c9d:0x472e512062063b84?sa=X&ved=2ahUKEwjZ4cKrg6X_AhWRrpUCHXiWCwYQ8gF6BAgPEAI"
+                  >30 Eastbourne Terrace, London W2 6LA, Reino Unido</a
+                >
+              </div>
+              <div class="card__info">
+                <img
+                  class="card__icon"
+                  src="./assets/Phone Icon.svg"
+                  alt="Phone icon"
+                />
+                <p class="card__phone">+44 13 5135 1051</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <h2>France</h2>
+              <div class="card__info">
+                <img
+                  class="card__icon"
+                  src="./assets/Location icon.svg"
+                  alt="Location icon"
+                />
+                <a class="card__address" href="https://www.google.com/maps/place/266+Pl.+Ernest+Granier,+34000+Montpellier,+Francia/data=!4m2!3m1!1s0x12b6af860a312943:0x93bc665724b39ca?sa=X&ved=2ahUKEwil2Z38g6X_AhV-rJUCHQaeCO0Q8gF6BAgIEAI">266 Place Ernest Granier 34000 Montpellier France</a>
+              </div>
+              <div class="card__info">
+                <img
+                  class="card__icon"
+                  src="./assets/Phone Icon.svg"
+                  alt="Phone icon"
+                />
+                <p class="card__phone">+33 5 12 18 21 86</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      <div class="form__container">
+        <form action="">
+          <div class="short__input__container">
+            <div class="short__input">
+              <label for="first name">First Name</label>
+              <input type="text" name="first name" placeholder="First Name" />
+            </div>
+            <div class="short__input">
+              <label for="last name">Last Name</label>
+              <input type="text" name="last name" placeholder="Last Name" />
+            </div>
+          </div>
+          <div class="normal__input">
+            <label for="email">Email Address</label>
+            <input type="text" name="email" placeholder="Email Address" />
+          </div>
+          <div class="normal__input">
+            <label for="company name">Company Name</label>
+            <input type="text" name="company name" placeholder="Company Name" />
+          </div>
+          <div class="normal__input">
+            <label for="phone">Phone Number</label>
+            <div id="phone__input">
+              <figure><img src="./assets/Bandera Uruguay.png" alt="" /></figure>
+              <input type="tel" name="phone" placeholder="Phone Number" />
+            </div>
+          </div>
+          <div class="normal__input">
+            <label for="company name">Company Name</label>
+            <input type="text" name="company name" placeholder="Company Name" />
+          </div>
+          <div class="long__input">
+            <label for="message">Message</label>
+            <input type="text" name="message" placeholder="Message" />
+          </div>
+          <button type="submit" id="btn__submit">Send</button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

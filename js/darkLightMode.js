@@ -12,4 +12,3 @@ btnLight.onclick = function() {
     btnLight.classList = "switch ball"
     btnDark.classList.remove('ball')
 }
-

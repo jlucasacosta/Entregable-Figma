@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -24,7 +24,7 @@
         <div class="nav__container">
           <a href="#"><img src="/assets/Brand.svg" alt="Brand" /></a>
           <ul>
-            <li><a class="nav__menu" href="#pricing">Pricing</a></li>
+            <li><div class="nav__menu" href="#pricing">Pricing</div></li>
             <li>
               <a class="nav__menu" href="#resourceCenter">Resource Center</a>
             </li>
@@ -107,39 +107,59 @@
         <form action="" class="">
           <div class="short__input__container">
             <div class="short__input">
-              <label for="first name">First Name</label>
-              <input type="text" name="first name" placeholder="First Name" />
+              <label for="first name">First Name*</label>
+              <input type="text" name="first name" placeholder="First Name" id="firstName" required />
             </div>
             <div class="short__input">
-              <label for="last name">Last Name</label>
-              <input type="text" name="last name" placeholder="Last Name" />
+              <label for="last name">Last Name*</label>
+              <input type="text" name="last name" placeholder="Last Name" id="lastName" required/>
             </div>
           </div>
           <div class="normal__input">
-            <label for="email">Email Address</label>
-            <input type="text" name="email" placeholder="Email Address" />
+            <label for="email">Email Address*</label>
+            <input type="email" name="email" placeholder="Email Address" id="email" required/>
           </div>
           <div class="normal__input">
-            <label for="company name">Company Name</label>
-            <input type="text" name="company name" placeholder="Company Name" />
+            <label for="company name">Company Name*</label>
+            <input type="text" name="company name" placeholder="Company Name" id="companyName" required/>
           </div>
           <div class="normal__input">
-            <label for="phone">Phone Number</label>
+            <label for="phone">Phone Number*</label>
             <div id="phone__input">
               <figure class="dark__mode">
                 <img src="./assets/Bandera Uruguay.png" alt="Uruguayan flag" />
               </figure>
-              <input type="tel" name="phone" placeholder="Phone Number" />
+              <input type="tel" name="phone" placeholder="Phone Number" id="phoneNumber" required/>
             </div>
           </div>
           <div class="long__input">
             <label for="message">Message</label>
-            <input type="text" name="message" placeholder="Message" />
+            <textarea name="message" id="message" cols="" rows="" placeholder="Message"></textarea>
           </div>
           <button type="submit" id="btn__submit">Send</button>
         </form>
       </div>
     </section>
+
+    <div class="modal__container">
+      <div class="modal">
+        <div class="modal__title">
+          <h2>Request Accepted</h2>
+          <i class="fa-solid fa-check modal__check"></i>
+        </div>
+        <div class="modal__body">
+          <p id="modal__name"></p>
+          <p id="modal__lastname"></p>
+          <p id="modal__email"></p>
+          <p id="modal__company"></p>
+          <p id="modal__phone"></p>
+          <p id="modal__message"></p>
+        </div>
+        <div class="modal__close"><button class="modal__close__btn"><i class="fa-solid fa-close"></i></button></div>
+      </div>
+    </div>
+    
     <script src="/js/darkLightMode.js"></script>
+    <script src="/js/app.js"></script>
   </body>
 </html>
